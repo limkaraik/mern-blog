@@ -1,30 +1,18 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import logo from './logo.png'; 
 
 class Home extends Component {
     render() {
         return (
             <div>
-                This is home page
-                <div className="row">
-                    <Link to="../register">
-                        <button 
-                            className="btn waves-effect red lighten-2"
-                            type="submit"
-                            name="action"
-                        >
-                            Sign Up
-                        </button>
-                    </Link> &nbsp;&nbsp;
-                    <Link to="../login">
-                        <button 
-                            className="btn waves-effect red lighten-2"
-                            type="submit"
-                            name="action"
-                        >
-                            Sign In
-                        </button>
-                    </Link>
+                <div style={{ display:'flex', justifyContent:'center', padding:'50px'}}>
+                    <img style={{height:'250px',width:'800px', overflow:'hidden'}} src={logo} alt="Logo" />
+                </div>
+                <div style={{ display:'flex', justifyContent:'center'}}>
+                    <h2>Website Currently Under Maintenance</h2>
+                </div>
+                <div style={{ display:'flex', justifyContent:'center'}}>
+                    <h3>Sorry For Any Inconvenience Cost</h3>
                 </div>
             </div>
         );
